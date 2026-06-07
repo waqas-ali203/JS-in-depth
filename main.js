@@ -121,3 +121,69 @@
 //     }
 //     console.log(i);
 // }
+
+
+
+// DAY 3 — Functions Core
+
+// Write a function declaration that prints your name.
+
+// function greet(){
+//     console.log("Waqas ali")
+// }
+
+// greet();
+
+
+// Write a function expression that prints "JavaScript Learning".
+
+// const Learning = function(){
+//     console.log("Javascript Learning")
+// }
+
+// Learning();
+
+
+// Write an arrow function that takes a number and returns its square.
+
+// function Square(number) {
+//     console.log(number * number)
+// }
+
+// Square(5);
+
+
+// Create a global variable called country and print it inside a function.
+
+// let country = "Pakistan";
+
+// function greet(){
+//     console.log(country)
+// }
+
+// greet();
+
+
+
+// Create a block scope variable inside an if statement and print it inside the block.
+
+// let age = 10;
+
+// if (age === 10){
+//     let discount = 23;
+//     console.log(age + discount)
+// }
+// console.log(age)
+
+
+// Create an arrow function that takes age as a parameter and returns:
+
+// const Year = (age) => {
+//     if(age >= 18){
+//         console.log("Adult")
+//     }
+//     else{
+//         console.log("Young")
+//     }
+// }
+// Year(18);
