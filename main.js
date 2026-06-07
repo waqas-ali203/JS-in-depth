@@ -25,7 +25,99 @@
 // "My name is ___ and I live in ___"
 
 
-let name = "Waqas Ali";
-let city = "Faisalabad";
+// let name = "Waqas Ali";
+// let city = "Faisalabad";
 
-console.log(`My name is ${name}  and I live in ${city}`);
+// console.log(`My name is ${name}  and I live in ${city}`);
+
+
+// DAY 2 — Control Flow Mastery
+
+
+// Write a program that checks whether a person's age is eligible for voting or not.
+
+// let age = 18;
+
+// if (age >= 18){
+//     console.log("You are eligible for vote")
+// }
+// else {
+//     console.log("You are not eligible for vote")
+// }
+
+
+// Write a program using switch statement that prints the month name for values 1 to 12.
+
+// let month = 6;
+
+// switch (month) {
+//     case 1:
+//         console.log("Jan")
+//         break;
+//     case 2:
+//         console.log("Feb")
+//         break;
+//     case 3:
+//         console.log("March")
+//         break;
+//     case 4:
+//         console.log("April")
+//         break;
+//     case 5:
+//         console.log("May")
+//         break;
+//     case 6:
+//         console.log("June")
+//         break;
+//     case 7:
+//         console.log("July")
+//         break;
+//     case 8:
+//         console.log("Aug")
+//         break;
+//     case 9:
+//         console.log("Sep")
+//         break;
+//     case 10:
+//         console.log("Oct")
+//         break;
+//     case 11:
+//         console.log("Nov")
+//         break;
+//     case 12:
+//         console.log("Dec")
+//         break;
+
+//     default:
+//         console.log("Invalid Month")
+//         break;
+// }
+
+
+
+// Write a program using a for loop to print numbers from 1 to 20.
+
+// for(i=1; i<=20; i++){
+//     console.log(i)
+// }
+
+
+// Write a program using a while loop to print numbers from 10 down to 1.
+
+// let i =10;
+
+// while (i>=1) {
+//     console.log(i)
+//     i--;
+// }
+
+
+// Write a program that prints numbers from 1 to 20 but skips number 10 .
+
+// for (let i = 0; i <=20; i++) {
+    
+//     if(i==10){
+//         continue;
+//     }
+//     console.log(i);
+// }
