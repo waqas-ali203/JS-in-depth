@@ -187,3 +187,49 @@
 //     }
 // }
 // Year(18);
+
+
+// DAY 4 — Arrays Basics
+
+// Write a program that creates an array of 5 favorite fruits and prints the second fruit.
+
+// let fruits = ["Apple", "Banana", "Mango"]
+// console.log(fruits[1])
+
+
+// Write a program that adds a new Fruit name at the end of an array.
+
+// let fruits = ["Apple", "Banana", "Mango"]
+// fruits.push("Stawbery");
+// console.log(fruits)
+
+
+// Write a program that creates a new array containing only the first 3 items of an existing array
+
+// let cities = ["Faisalabad", "Multan", "Lahore", "Islamabad", "Rawalpindi"]
+// let newcities = cities.slice(0,3)
+// console.log(newcities)
+
+// Write a program that removes one city from the middle of an array
+
+// let cities = ["Faisalabad", "Multan", "Lahore", "Islamabad", "Rawalpindi"]
+// let newcities = cities.splice(2,1)
+// console.log(newcities)
+
+// Write a program that prints all cities names from an array.
+
+// let cities = ["Faisalabad", "Multan", "Lahore", "Islamabad", "Rawalpindi"]
+
+// for( i=0; i<= cities.length; i++){
+    //     console.log(cities[i])
+    // }
+    
+    
+    // Write a program that prints all city names from an array using a for...of loop.
+    
+    // let cities = ["Faisalabad", "Multan", "Lahore", "Islamabad", "Rawalpindi"]
+
+    // for (const name of cities) {
+    //     console.log(name)
+    // }
+
