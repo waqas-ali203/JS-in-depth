@@ -233,3 +233,52 @@
     //     console.log(name)
     // }
 
+
+
+// DAY 5 — Advanced Arrays
+
+// Write a program that doubles all numbers in an array using map().
+
+// let arr = [23,34,44,6,87]
+
+// let result = arr.map((double) => double * 2)
+
+// console.log(result)
+
+
+// Write a program that returns only odd numbers from an array using filter().
+
+// let arr = [23,34,44,6,87]
+// let oddNum = arr.filter((odd) => odd % 2 ==! 0 )
+// console.log(oddNum)
+
+
+
+// Write a program that prints all employee names using forEach().
+
+// let employe = ["Waqas", "Ali", "Umer", "Usman"]
+
+// let result = employe.forEach((value) => {
+
+//     console.log(value)
+// })
+
+
+// Write a program that filters numbers greater than 50 and then doubles them using method chaining.
+
+
+// let arr = [20 , 34 , 56, 78, 90]
+// let result = arr.filter((value) => value>50).map((value) => value *2)
+// console.log(result)
+
+
+// Write a program that reverses an array manually without using reverse().
+
+let arr = [20 , 34 , 56, 78, 90]
+
+let reverseArr = [];
+
+for (let i = arr.length-1; i >=0 ; i--){
+    reverseArr.push(arr[i]);
+}
+console.log(reverseArr)
