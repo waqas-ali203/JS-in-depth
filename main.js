@@ -335,3 +335,49 @@
 // for (const key in person) {
 // console.log(key + " : " + person[key]);}
 
+
+// DAY 7 — ES6 Deep Concepts + Advanced Objects
+
+// Create an array of 4 fruits and use array destructuring to store first and second fruit in variables.
+
+// let fruits = ["Apple" , "Banana" , "Mango" , "Melon"]
+// let [first , second] = fruits;
+// console.log(first)
+// console.log(second)
+
+// Create two arrays and merge them using spread operator.
+
+
+// let arr1 = [1,2,3,4]
+// let arr2 = [5,6,7,8]
+// let merge = [...arr1, ...arr2]
+// console.log(merge)
+
+
+// Write a function that accepts unlimited numbers using rest operator and returns their sum.
+
+// function sum(...number){
+//     let total = 0;
+
+//     for (const value of number) {
+//         total += value
+//     }
+//     return total;
+// }
+
+// console.log(sum(10,20,30,40));
+
+// Create a nested object and safely print city using optional chaining.
+
+// let user = {
+//     name : "Waqas Ali",
+//     age : 23,
+//     adress : {}
+// }
+// console.log(user?.adress?.city);
+
+// If user name is null, print "Anonymous User" using nullish coalescing.
+
+let username = null;
+
+console.log(username ?? "Anonymous User")
