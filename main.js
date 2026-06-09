@@ -274,11 +274,64 @@
 
 // Write a program that reverses an array manually without using reverse().
 
-let arr = [20 , 34 , 56, 78, 90]
+// let arr = [20 , 34 , 56, 78, 90]
 
-let reverseArr = [];
+// let reverseArr = [];
 
-for (let i = arr.length-1; i >=0 ; i--){
-    reverseArr.push(arr[i]);
-}
-console.log(reverseArr)
+// for (let i = arr.length-1; i >=0 ; i--){
+//     reverseArr.push(arr[i]);
+// }
+// console.log(reverseArr)
+
+
+
+// DAY 6 — Objects Core
+
+// let car = {
+//     name: "Sonata",
+//     start: function () {
+//         console.log("Car start");
+//     }
+// };
+
+// car.start();
+
+
+// Create an object person with: name age Use this keyword inside a method to print the person's name.
+
+// let person = {
+//     name: "Waqas",
+//     age: 24,
+//     showName: function () {
+//         console.log(this.name);
+//     }
+// };
+
+// person.showName();
+
+
+// Create an object and print all its keys & values & entries 
+
+// let person = {
+//     name: "Waqas",
+//     age: 24,
+//     city: "Faisalabad"
+// };
+
+// console.log(Object.keys(person));
+// console.log(Object.values(person));
+// console.log(Object.entries(person));
+
+
+
+// Create an object representing a product and use for...in to print: key : value for every property.
+
+// let person = {
+//     name: "Waqas",
+//     age: 24,
+//     city: "Faisalabad"
+// };
+
+// for (const key in person) {
+// console.log(key + " : " + person[key]);}
+
