@@ -1,6 +1,5 @@
 // DAY 1 — JS Fundamentals Reset
 
-
 // Write a program that stores your name, age and city in variables and prints them.
 
 // let name = "Waqas Ali";
@@ -11,7 +10,6 @@
 // console.log("Age",age);
 // console.log("City",city);
 
-
 // Write a program that stores age as a string and converts it into a number.
 
 // let age = "24";
@@ -19,20 +17,16 @@
 
 // console.log("New Age is", newAge + 2)
 
-
 // Write a program that uses a template literal to print:
 
 // "My name is ___ and I live in ___"
-
 
 // let name = "Waqas Ali";
 // let city = "Faisalabad";
 
 // console.log(`My name is ${name}  and I live in ${city}`);
 
-
 // DAY 2 — Control Flow Mastery
-
 
 // Write a program that checks whether a person's age is eligible for voting or not.
 
@@ -44,7 +38,6 @@
 // else {
 //     console.log("You are not eligible for vote")
 // }
-
 
 // Write a program using switch statement that prints the month name for values 1 to 12.
 
@@ -93,14 +86,11 @@
 //         break;
 // }
 
-
-
 // Write a program using a for loop to print numbers from 1 to 20.
 
 // for(i=1; i<=20; i++){
 //     console.log(i)
 // }
-
 
 // Write a program using a while loop to print numbers from 10 down to 1.
 
@@ -111,18 +101,15 @@
 //     i--;
 // }
 
-
 // Write a program that prints numbers from 1 to 20 but skips number 10 .
 
 // for (let i = 0; i <=20; i++) {
-    
+
 //     if(i==10){
 //         continue;
 //     }
 //     console.log(i);
 // }
-
-
 
 // DAY 3 — Functions Core
 
@@ -134,7 +121,6 @@
 
 // greet();
 
-
 // Write a function expression that prints "JavaScript Learning".
 
 // const Learning = function(){
@@ -143,7 +129,6 @@
 
 // Learning();
 
-
 // Write an arrow function that takes a number and returns its square.
 
 // function Square(number) {
@@ -151,7 +136,6 @@
 // }
 
 // Square(5);
-
 
 // Create a global variable called country and print it inside a function.
 
@@ -163,8 +147,6 @@
 
 // greet();
 
-
-
 // Create a block scope variable inside an if statement and print it inside the block.
 
 // let age = 10;
@@ -174,7 +156,6 @@
 //     console.log(age + discount)
 // }
 // console.log(age)
-
 
 // Create an arrow function that takes age as a parameter and returns:
 
@@ -188,7 +169,6 @@
 // }
 // Year(18);
 
-
 // DAY 4 — Arrays Basics
 
 // Write a program that creates an array of 5 favorite fruits and prints the second fruit.
@@ -196,13 +176,11 @@
 // let fruits = ["Apple", "Banana", "Mango"]
 // console.log(fruits[1])
 
-
 // Write a program that adds a new Fruit name at the end of an array.
 
 // let fruits = ["Apple", "Banana", "Mango"]
 // fruits.push("Stawbery");
 // console.log(fruits)
-
 
 // Write a program that creates a new array containing only the first 3 items of an existing array
 
@@ -221,19 +199,16 @@
 // let cities = ["Faisalabad", "Multan", "Lahore", "Islamabad", "Rawalpindi"]
 
 // for( i=0; i<= cities.length; i++){
-    //     console.log(cities[i])
-    // }
-    
-    
-    // Write a program that prints all city names from an array using a for...of loop.
-    
-    // let cities = ["Faisalabad", "Multan", "Lahore", "Islamabad", "Rawalpindi"]
+//     console.log(cities[i])
+// }
 
-    // for (const name of cities) {
-    //     console.log(name)
-    // }
+// Write a program that prints all city names from an array using a for...of loop.
 
+// let cities = ["Faisalabad", "Multan", "Lahore", "Islamabad", "Rawalpindi"]
 
+// for (const name of cities) {
+//     console.log(name)
+// }
 
 // DAY 5 — Advanced Arrays
 
@@ -245,14 +220,11 @@
 
 // console.log(result)
 
-
 // Write a program that returns only odd numbers from an array using filter().
 
 // let arr = [23,34,44,6,87]
 // let oddNum = arr.filter((odd) => odd % 2 ==! 0 )
 // console.log(oddNum)
-
-
 
 // Write a program that prints all employee names using forEach().
 
@@ -263,14 +235,11 @@
 //     console.log(value)
 // })
 
-
 // Write a program that filters numbers greater than 50 and then doubles them using method chaining.
-
 
 // let arr = [20 , 34 , 56, 78, 90]
 // let result = arr.filter((value) => value>50).map((value) => value *2)
 // console.log(result)
-
 
 // Write a program that reverses an array manually without using reverse().
 
@@ -283,8 +252,6 @@
 // }
 // console.log(reverseArr)
 
-
-
 // DAY 6 — Objects Core
 
 // let car = {
@@ -295,7 +262,6 @@
 // };
 
 // car.start();
-
 
 // Create an object person with: name age Use this keyword inside a method to print the person's name.
 
@@ -309,8 +275,7 @@
 
 // person.showName();
 
-
-// Create an object and print all its keys & values & entries 
+// Create an object and print all its keys & values & entries
 
 // let person = {
 //     name: "Waqas",
@@ -321,8 +286,6 @@
 // console.log(Object.keys(person));
 // console.log(Object.values(person));
 // console.log(Object.entries(person));
-
-
 
 // Create an object representing a product and use for...in to print: key : value for every property.
 
@@ -335,7 +298,6 @@
 // for (const key in person) {
 // console.log(key + " : " + person[key]);}
 
-
 // DAY 7 — ES6 Deep Concepts + Advanced Objects
 
 // Create an array of 4 fruits and use array destructuring to store first and second fruit in variables.
@@ -347,12 +309,10 @@
 
 // Create two arrays and merge them using spread operator.
 
-
 // let arr1 = [1,2,3,4]
 // let arr2 = [5,6,7,8]
 // let merge = [...arr1, ...arr2]
 // console.log(merge)
-
 
 // Write a function that accepts unlimited numbers using rest operator and returns their sum.
 
@@ -378,6 +338,19 @@
 
 // If user name is null, print "Anonymous User" using nullish coalescing.
 
-let username = null;
+// let username = null;
 
-console.log(username ?? "Anonymous User")
+// console.log(username ?? "Anonymous User")
+
+// DAY 8 — Array of Objects (Most Important for Real Projects)
+
+// Create an array of 3 student  Print all student names using map().
+
+let students = [
+  { Name: "Waqas", Age: 23 },
+  { Name: "Ali", Age: 24 },
+  { Name: "ammar", Age: 18 },
+];
+
+let names = students.map((std) => std.Name);
+console.log(names);
