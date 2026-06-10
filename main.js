@@ -346,11 +346,78 @@
 
 // Create an array of 3 student  Print all student names using map().
 
-let students = [
-  { Name: "Waqas", Age: 23 },
-  { Name: "Ali", Age: 24 },
-  { Name: "ammar", Age: 18 },
-];
+// let students = [
+//   { Name: "Waqas", Age: 23 },
+//   { Name: "Ali", Age: 24 },
+//   { Name: "ammar", Age: 18 },
+// ];
 
-let names = students.map((std) => std.Name);
-console.log(names);
+// let names = students.map((std) => std.Name);
+// console.log(names);
+
+
+// Create an array of users and return only active users.
+
+// let users = [
+
+//  {
+//   id:1,
+//   name:"Ali",
+//   active:true
+//  },
+
+//  {
+//   id:2,
+//   name:"Waqas",
+//   active:false
+//  },
+
+//  {
+//   id:3,
+//   name:"Ammar",
+//   active:true
+//  }
+
+// ];
+
+// let activeUsers = users.filter((user) => user.active)
+// console.log(activeUsers)
+
+
+// Use chaining to: Filter employees with salary > 50000 Then return only their names
+
+// let users = [
+
+//  {
+//   id:1,
+//   name:"Ali",
+//   active:true,
+//   salary : 30000
+//  },
+
+//  {
+//   id:2,
+//   name:"Waqas",
+//   active:false,
+//   salary : 70000
+//  },
+
+//  {
+//   id:3,
+//   name:"Ammar",
+//   active:true,
+//   salary : 80000
+//  }
+// ]
+
+// let usernames = users.filter((user) => user.salary >= 50000).map((value) => value.name)
+// console.log(usernames)
+
+
+// Create an array of courses and return course names in uppercase using map().
+
+// let courses = ["html", "css", "javascript"];
+
+// let upperCourses = courses.map(course => course.toUpperCase());
+
+// console.log(upperCourses);
