@@ -421,3 +421,55 @@
 // let upperCourses = courses.map(course => course.toUpperCase());
 
 // console.log(upperCourses);
+
+
+// DAY 9 — DOM INTRODUCTION (FULL FOUNDATION)
+
+// Create a heading and change its text using innerText.
+
+// let name = document.getElementById("heading");
+// name.innerText = "I am Ali";
+// console.log(name)
+
+// Select a div and change its background color using JS.
+
+// let colors = document.getElementById("main");
+// colors.style.backgroundColor = 'red'
+
+// Create a button dynamically using createElement().
+
+// let button1 = document.createElement('button');
+// button1.innerText = 'Click Me!';
+// document.body.appendChild(button1)
+
+
+// let list = document.createElement("ul")
+// let item1 = document.createElement("li")
+// item1.innerText = "Apple"
+// let item2 = document.createElement("li")
+// item2.innerText = "Mango"
+// let item3 = document.createElement("li")
+// item3.innerText = "Banana"
+
+// list.appendChild(item1)
+// list.appendChild(item2)
+// list.appendChild(item3)
+
+// document.body.appendChild(list)
+
+// list.removeChild(item2)
+
+
+// Build a mini “Add item to list” logic.
+
+// function Addtask(){
+//  let user = document.getElementById("userValue");
+//  let list = document.getElementById("tasklist");
+//  let li = document.createElement("li");
+//  li.innerText = user.value;
+
+//  list.appendChild(li)
+//   }
+
+
+// DAY 10 — DOM EVENTS (REAL INTERACTION SYSTEM)
