@@ -355,7 +355,6 @@
 // let names = students.map((std) => std.Name);
 // console.log(names);
 
-
 // Create an array of users and return only active users.
 
 // let users = [
@@ -382,7 +381,6 @@
 
 // let activeUsers = users.filter((user) => user.active)
 // console.log(activeUsers)
-
 
 // Use chaining to: Filter employees with salary > 50000 Then return only their names
 
@@ -413,7 +411,6 @@
 // let usernames = users.filter((user) => user.salary >= 50000).map((value) => value.name)
 // console.log(usernames)
 
-
 // Create an array of courses and return course names in uppercase using map().
 
 // let courses = ["html", "css", "javascript"];
@@ -421,7 +418,6 @@
 // let upperCourses = courses.map(course => course.toUpperCase());
 
 // console.log(upperCourses);
-
 
 // DAY 9 — DOM INTRODUCTION (FULL FOUNDATION)
 
@@ -442,7 +438,6 @@
 // button1.innerText = 'Click Me!';
 // document.body.appendChild(button1)
 
-
 // let list = document.createElement("ul")
 // let item1 = document.createElement("li")
 // item1.innerText = "Apple"
@@ -459,7 +454,6 @@
 
 // list.removeChild(item2)
 
-
 // Build a mini “Add item to list” logic.
 
 // function Addtask(){
@@ -470,7 +464,6 @@
 
 //  list.appendChild(li)
 //   }
-
 
 // DAY 10 — DOM EVENTS (REAL INTERACTION SYSTEM)
 
@@ -488,7 +481,6 @@
 //     console.log(input.value)
 // })
 
-
 // Create a button that changes heading text when clicked & changes background color
 
 // let btn = document.getElementById("button1");
@@ -496,7 +488,6 @@
 //     btn.innerText = "Clicked button";
 //     document.body.style.backgroundColor = 'red'
 // })
-
 
 // Create a mini counter: Increment button  Decrement button Display count on screen using DOM events.
 
@@ -510,3 +501,40 @@
 // btn2.addEventListener("click", function(){
 //     miniCounter.innerText = Number(miniCounter.innerText) - 1;
 // })
+
+// DAY 11 — LOCAL STORAGE + JSON (REAL WORLD DATA SAVE SYSTEM)
+
+// Store your name in localStorage and retrieve it.
+
+// let user = {
+//   name: "Waqas",
+//   age: 23,
+// };
+
+// localStorage.setItem("user", JSON.stringify(user));
+// let storeItem = JSON.parse(localStorage.getItem("user"));
+// console.log(storeItem);
+// console.log(storeItem.name)
+
+
+// Store an array of 3 hobbies in localStorage.
+
+// let hobbies = ["cricket", "play", "football"]
+
+// localStorage.setItem("hobbies", JSON.stringify(hobbies));
+// let filterHobby = JSON.parse(localStorage.getItem("hobbies"));
+// console.log(filterHobby);
+// console.log(filterHobby[1])
+
+// Delete a specific key from localStorage.
+
+// let user = {
+//   name: "Waqas",
+//   age: 23,
+//   class: "BS Software Engineering"
+// };
+
+// localStorage.setItem("user", JSON.stringify(user));
+// localStorage.clear()
+
+// // localStorage.removeItem("user");
