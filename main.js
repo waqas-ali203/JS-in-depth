@@ -538,3 +538,54 @@
 // localStorage.clear()
 
 // // localStorage.removeItem("user");
+
+
+// DAY 12 — FORM HANDLING + VALIDATION (REAL WORLD WEB CORE)
+
+// let form =
+// document.getElementById("form");
+
+// form.addEventListener(
+//   "submit",
+//   function(e){
+
+//     e.preventDefault();
+
+//     let name =
+//     document.getElementById("name").value;
+
+//     let email =
+//     document.getElementById("email").value;
+
+//     let msg =
+//     document.getElementById("msg");
+
+//     if(name === "" || email === ""){
+
+//       msg.innerText =
+//       "All fields required";
+
+//       msg.style.color = "red";
+
+//     }
+
+//     else if(!email.includes("@")){
+
+//       msg.innerText =
+//       "Invalid email";
+
+//       msg.style.color = "red";
+
+//     }
+
+//     else{
+
+//       msg.innerText =
+//       "Form submitted successfully";
+
+//       msg.style.color = "green";
+
+//     }
+
+//   }
+// );
