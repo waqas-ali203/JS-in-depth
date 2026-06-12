@@ -473,3 +473,40 @@
 
 
 // DAY 10 — DOM EVENTS (REAL INTERACTION SYSTEM)
+
+// Create a button and print: Button Clicked when clicked.
+
+// let btn = document.getElementById("button1");
+// btn.addEventListener("click", function(){
+//     console.log("Button clicked")
+// })
+
+// Create an input field and print typed value using input event.
+
+// let input = document.getElementById("userValue");
+// input.addEventListener("input", function(){
+//     console.log(input.value)
+// })
+
+
+// Create a button that changes heading text when clicked & changes background color
+
+// let btn = document.getElementById("button1");
+// btn.addEventListener("click", function(){
+//     btn.innerText = "Clicked button";
+//     document.body.style.backgroundColor = 'red'
+// })
+
+
+// Create a mini counter: Increment button  Decrement button Display count on screen using DOM events.
+
+// let miniCounter = document.getElementById("count");
+// let btn1 = document.getElementById("button-increment");
+// let btn2 = document.getElementById("button-decrement");
+
+// btn1.addEventListener("click", function(){
+//     miniCounter.innerText = Number(miniCounter.innerText) + 1;
+// })
+// btn2.addEventListener("click", function(){
+//     miniCounter.innerText = Number(miniCounter.innerText) - 1;
+// })
