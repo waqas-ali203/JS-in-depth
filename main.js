@@ -516,7 +516,6 @@
 // console.log(storeItem);
 // console.log(storeItem.name)
 
-
 // Store an array of 3 hobbies in localStorage.
 
 // let hobbies = ["cricket", "play", "football"]
@@ -538,7 +537,6 @@
 // localStorage.clear()
 
 // // localStorage.removeItem("user");
-
 
 // DAY 12 — FORM HANDLING + VALIDATION (REAL WORLD WEB CORE)
 
@@ -589,3 +587,56 @@
 
 //   }
 // );
+
+// DAY 13 — PROMISES DEEP DIVE (ASYNC FOUNDATION)
+
+// Print "Hello" after 2 seconds.
+
+// setTimeout(() =>{
+//     console.log("Hello")
+// },2000)
+
+
+// Print numbers 1–5 using setTimeout.
+// for (let i = 0; i <= 5; i++) {
+//     setTimeout(() => {
+//         console.log(i);
+//     }, i * 1000);
+// }
+
+
+// Create interval that prints "Hi" every second and stop after 5 second.
+
+// let timer = setInterval(() =>{
+//     console.log('HI')
+// },1000)
+
+// clearInterval(timer)
+
+// setTimeout(() =>{
+//     clearInterval(timer)
+// },5000)
+
+
+// Build mini timer (start → stop using interval).
+
+// let count = 0;
+// let interval = null;
+
+// let timer = document.getElementById("timer");
+// let startBtn = document.getElementById("timer-start");
+// let stopBtn = document.getElementById("timer-stop");
+
+// startBtn.addEventListener("click", () => {
+//     if (interval) return;
+
+//     interval = setInterval(() => {
+//         timer.innerText = count;
+//         count++;
+//     }, 1000);
+// });
+
+// stopBtn.addEventListener("click", () => {
+//     clearInterval(interval);
+//     interval = null;
+// });
