@@ -640,3 +640,41 @@
 //     clearInterval(interval);
 //     interval = null;
 // });
+
+
+// DAY 14 — PROMISES (REAL MODERN JAVASCRIPT CORE)
+
+// Create a promise that resolves "Hello".
+
+// let promise = new Promise((resolve, reject) => {
+//     console.log("Hello");
+//     resolve("Done")
+// })
+
+// promise.then((result) =>{
+//     console.log(result)
+// })
+
+
+// Chain 3 promises step by step.
+
+// function step1(){
+//     return Promise.resolve("Done step1")
+// }
+// function step2(){
+//     return Promise.resolve("Done step2")
+// }
+// function step3(){
+//     return Promise.resolve("Done step3")
+// }
+
+// step1().then((result)=>{
+//     console.log(result);
+//     return step2()
+// }).then((result)=>{
+//     console.log(result);
+//     return step3()
+// })
+// .then((result)=>{
+//     console.log(result);
+// })
