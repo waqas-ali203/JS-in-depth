@@ -596,14 +596,12 @@
 //     console.log("Hello")
 // },2000)
 
-
 // Print numbers 1–5 using setTimeout.
 // for (let i = 0; i <= 5; i++) {
 //     setTimeout(() => {
 //         console.log(i);
 //     }, i * 1000);
 // }
-
 
 // Create interval that prints "Hi" every second and stop after 5 second.
 
@@ -616,7 +614,6 @@
 // setTimeout(() =>{
 //     clearInterval(timer)
 // },5000)
-
 
 // Build mini timer (start → stop using interval).
 
@@ -641,7 +638,6 @@
 //     interval = null;
 // });
 
-
 // DAY 14 — PROMISES (REAL MODERN JAVASCRIPT CORE)
 
 // Create a promise that resolves "Hello".
@@ -654,7 +650,6 @@
 // promise.then((result) =>{
 //     console.log(result)
 // })
-
 
 // Chain 3 promises step by step.
 
@@ -678,3 +673,64 @@
 // .then((result)=>{
 //     console.log(result);
 // })
+
+// Convert callback example into promise.
+
+// function getFood(){
+//     return new Promise((resolve, reject) => {
+//         resolve("Food delivered");
+//     })
+// }
+
+// getFood().then((result) =>{
+//     console.log(result)
+// }).catch((error) =>{
+//     console.log(error)
+// })
+
+// Simulate API call using Promise + setTimeout.
+
+// function fakeApiCall() {
+//     return new Promise((resolve, reject) => {
+
+//         setTimeout(() => {
+//             resolve("User data received");
+//         }, 2000);
+
+//     });
+// }
+// fakeApiCall()
+//     .then((data) => {
+//         console.log(data);
+//     })
+//     .catch((error) => {
+//         console.log(error);
+//     });
+
+// Build mini system: login promise , fetch user data promise ,display result
+
+function userLogin() {
+  return new Promise((resolve, reject) => {
+    resolve("User login");
+  });
+}
+
+function fetchApi() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("User data Fetch");
+    }, 2000);
+  });
+}
+
+userLogin()
+  .then((data) => {
+    console.log(data);
+    return fetchApi();
+  })
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
