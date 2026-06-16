@@ -709,28 +709,82 @@
 
 // Build mini system: login promise , fetch user data promise ,display result
 
-function userLogin() {
-  return new Promise((resolve, reject) => {
-    resolve("User login");
-  });
-}
+// function userLogin() {
+//   return new Promise((resolve, reject) => {
+//     resolve("User login");
+//   });
+// }
 
-function fetchApi() {
+// function fetchApi() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve("User data Fetch");
+//     }, 2000);
+//   });
+// }
+
+// userLogin()
+//   .then((data) => {
+//     console.log(data);
+//     return fetchApi();
+//   })
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
+
+// DAY 15 — async/await (MODERN JS STANDARD)
+
+// Create async function returning "Hello" with 2-second delay function.
+
+// function delay() {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             resolve("2 seconds done");
+//         }, 2000);
+//     });
+// }
+
+// async function run() {
+//     console.log("Start");
+
+//     let result = await delay();
+//     console.log(result);
+//     setTimeout(()=>{
+//         console.log("End");
+//     },1000)
+// }
+
+// run();
+
+// Implement retry system (3 attempts).
+
+function api() {
   return new Promise((resolve, reject) => {
+    let success = Math.random() > 0.7;
     setTimeout(() => {
-        resolve("User data Fetch");
-    }, 2000);
+      if (success) {
+        resolve("Success");
+      } else {
+        reject("Fail");
+      }
+    }, 1000);
   });
 }
 
-userLogin()
-  .then((data) => {
-    console.log(data);
-    return fetchApi();
-  })
-  .then((data) => {
-    console.log(data);
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+async function retryApi(retries = 3) {
+  for (let i = 1; i <= retries; i++) {
+    try {
+      let result = await api();
+      console.log(result);
+      return;
+    } catch (error) {
+        console.log(`Failed ${i} Attempet`)
+    }
+  }
+  console.log("All Fetch Try failed")
+}
+
+retryApi();
