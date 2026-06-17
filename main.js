@@ -792,4 +792,85 @@
 
 // DAY 16 — FETCH API (REAL WORLD DATA FETCHING)
 
-Fetch a single post from API.
+// Fetch a single post from API.
+
+// fetch("https://jsonplaceholder.typicode.com/posts/1")
+//   .then((response) => response.json())
+//   .then((data) => {
+//     console.log(data);
+//   });
+
+
+// Fetch multiple posts and show first 5
+
+// fetch("https://jsonplaceholder.typicode.com/posts")
+//   .then((response) => response.json())
+//   .then((data) => {
+//     console.log(data.slice(0, 5));
+//   });
+
+
+// Handle error using try/catch
+
+// async function getPost() {
+//   try {
+//     let response = await fetch(
+//       "https://jsonplaceholder.typicode.com/posts/1"
+//     );
+
+//     let data = await response.json();
+
+//     console.log(data);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+
+// getPost();
+
+
+// Check response.ok and throw error
+
+// async function getPost() {
+//   try {
+//     let response = await fetch(
+//       "https://jsonplaceholder.typicode.com/posts/1"
+//     );
+
+//     if (!response.ok) {
+//       throw new Error("Request Failed");
+//     }
+
+//     let data = await response.json();
+
+//     console.log(data);
+//   } catch (error) {
+//     console.log(error.message);
+//   }
+// }
+
+// getPost();
+
+
+// Mini System (Best Practice Challenge) Fetch user data Display name Handle error
+
+// async function getUser() {
+//   try {
+//     let response = await fetch(
+//       "https://jsonplaceholder.typicode.com/users/1"
+//     );
+
+//     if (!response.ok) {
+//       throw new Error("User Not Found");
+//     }
+
+//     let user = await response.json();
+
+//     console.log(user.name);
+ 
+//   } catch (error) {
+//     console.log(error.message);
+//   }
+// }
+
+// getUser();
