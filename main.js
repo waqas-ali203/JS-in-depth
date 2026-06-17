@@ -761,30 +761,35 @@
 
 // Implement retry system (3 attempts).
 
-function api() {
-  return new Promise((resolve, reject) => {
-    let success = Math.random() > 0.7;
-    setTimeout(() => {
-      if (success) {
-        resolve("Success");
-      } else {
-        reject("Fail");
-      }
-    }, 1000);
-  });
-}
+// function api() {
+//   return new Promise((resolve, reject) => {
+//     let success = Math.random() > 0.7;
+//     setTimeout(() => {
+//       if (success) {
+//         resolve("Success");
+//       } else {
+//         reject("Fail");
+//       }
+//     }, 1000);
+//   });
+// }
 
-async function retryApi(retries = 3) {
-  for (let i = 1; i <= retries; i++) {
-    try {
-      let result = await api();
-      console.log(result);
-      return;
-    } catch (error) {
-        console.log(`Failed ${i} Attempet`)
-    }
-  }
-  console.log("All Fetch Try failed")
-}
+// async function retryApi(retries = 3) {
+//   for (let i = 1; i <= retries; i++) {
+//     try {
+//       let result = await api();
+//       console.log(result);
+//       return;
+//     } catch (error) {
+//         console.log(`Failed ${i} Attempet`)
+//     }
+//   }
+//   console.log("All Fetch Try failed")
+// }
 
-retryApi();
+// retryApi();
+
+
+// DAY 16 — FETCH API (REAL WORLD DATA FETCHING)
+
+Fetch a single post from API.
